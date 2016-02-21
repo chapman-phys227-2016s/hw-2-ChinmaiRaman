@@ -27,7 +27,7 @@ def graph(f, n, xmin, xmax, resolution = 1001):
     plt.xlabel('x')
     plt.ylabel('y')
     plt.axis([xmin, xmax, min(ypactual) - 0.1, max(ypactual) + 0.1])
-    plt.title('f(x) = sin(x) and interpolation points')
+    plt.title('f(x) and interpolation points')
     plt.show(fig)
 
 def f(x):
