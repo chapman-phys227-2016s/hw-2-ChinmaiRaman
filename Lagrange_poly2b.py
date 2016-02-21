@@ -14,8 +14,6 @@ Description: Investigates the behavior of Lagrange's interpolating polynomials
 """
 
 import numpy as np
-from matplotlib.pylab import *
-
 import Lagrange_poly2 as p1
 
 def f(x):
