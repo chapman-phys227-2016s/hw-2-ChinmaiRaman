@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 """
-File: fill_arrays_vectorized.py
+File: fit_pendulum_data.py
 Copyright (c) 2016 Chinmai Raman
 License: MIT
 
