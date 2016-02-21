@@ -14,7 +14,6 @@ Description: Plots Lagrange's interpolating polynomial
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
 
 def graph(f, n, xmin, xmax, resolution = 1001):
     fig = plt.figure(1)
