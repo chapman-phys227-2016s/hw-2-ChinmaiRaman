@@ -48,4 +48,4 @@ def test_p_L():
 
 test_p_L()
 
-assert(abs(p_L(np.pi * 0.375, xp, yp) - np.sin(0.375 * np.pi)) < 1e-3)
+assert(abs(p_L(np.pi * 0.375, np.linspace(0, np.pi, 5), np.sin(np.linspace(0, np.pi, 5))) - np.sin(0.375 * np.pi)) < 1e-3)
