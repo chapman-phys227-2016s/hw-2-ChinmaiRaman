@@ -69,7 +69,9 @@ def L_k(x, k, xp, yp):
         product *= (x - xp[i]) / float(xp[k] - xp[i])
     return product
 
-def test_p_L(xp, yp):
+def test_p_L():
+    xp = np.linspace(0, np.pi, 5)
+    yp = np.sin(xp)
     for i in xrange(len(yp)):
         assert(abs(p_L(xp[i], xp, yp) - yp[i]) < 1e-3), 'Failure'
 
