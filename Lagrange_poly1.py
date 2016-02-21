@@ -40,7 +40,7 @@ def test_L():
     yp = np.asarray([])
     assert(abs(L_k(-1, 1, xp, yp) - (-3)) < 1e-3)
 
-def test_p_L(xp, yp):
+def test_p_L():
     for i in xrange(len(yp)):
         assert(abs(p_L(xp[i], xp, yp) - yp[i]) < 1e-3), 'Failure'
 
