@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 """
-File: fill_arrays_vectorized.py
+File: midpoint_vec.py
 Copyright (c) 2016 Chinmai Raman
 License: MIT
 
