@@ -39,10 +39,6 @@ def test_L():
     xp = np.asarray([2, 3])
     yp = np.asarray([])
     assert(abs(L_k(-1, 1, xp, yp) - (-3)) < 1e-3)
-    
-def test_p():
-    xp = np.asarray([2, 3])
-    print p_L(2, xp, yp)
 
 def test_p_L(xp, yp):
     for i in xrange(len(yp)):
