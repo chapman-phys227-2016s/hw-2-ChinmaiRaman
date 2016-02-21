@@ -26,7 +26,24 @@ def graph(f, n, xmin, xmax, resolution = 1001):
     plt.plot(xp, yp, 'b-')
     plt.xlabel('x')
     plt.ylabel('y')
-    plt.axis([xmin, xmax, min(ypactual) - 0.1, max(ypactual) + 0.1])
+    plt.axis([xmin, xmax, min(ypactual) - 0.3, max(ypactual) + 0.3])
+    plt.title('f(x) and interpolation points')
+    plt.show(fig)
+    
+def multigraph(f, n, xmin, xmax, c, resolution = 1001):
+    i = 0
+    for elem in n:
+        fig = plt.figure(1)
+        xpactual = np.linspace(xmin, xmax, elem)
+        ypactual = f(xpactual)
+        xp = np.linspace(xmin, xmax, resolution)
+        yp = np.array([p_L(x, xpactual, ypactual) for x in xp])
+        plt.plot(xpactual, ypactual, 'ro')
+        plt.plot(xp, yp, c[i])
+        i += 1
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.axis([xmin, xmax, min(ypactual) - 0.3, max(ypactual) + 0.3])
     plt.title('f(x) and interpolation points')
     plt.show(fig)
 
