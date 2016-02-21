@@ -42,7 +42,6 @@ def test_L():
     
 def test_p():
     xp = np.asarray([2, 3])
-    yp = np.asarray([2, 3])
     print p_L(2, xp, yp)
 
 def test_p_L(xp, yp):
