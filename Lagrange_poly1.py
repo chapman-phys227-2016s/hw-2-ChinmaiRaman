@@ -41,11 +41,11 @@ def test_L():
     assert(abs(L_k(-1, 1, xp, yp) - (-3)) < 1e-3)
 
 def test_p_L():
+    xp = np.linspace(0, np.pi, 5)
+    yp = np.sin(xp)
     for i in xrange(len(yp)):
         assert(abs(p_L(xp[i], xp, yp) - yp[i]) < 1e-3), 'Failure'
 
-xp = np.linspace(0, np.pi, 5)
-yp = np.sin(xp)
 test_p_L()
 
 assert(abs(p_L(np.pi * 0.375, xp, yp) - np.sin(0.375 * np.pi)) < 1e-3)
